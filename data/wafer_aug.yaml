@@ -1,0 +1,10 @@
+# Wafer-map defect detection after offline minority-class synthesis
+# (rotation + angular-sector copy-paste). Same splits as wafer.yaml; only the
+# training list is extended. Point WAFER_AUG_ROOT at this directory.
+path: ./datasets/wafer_aug
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 9
+names: ['Center', 'Donut', 'Edge-Loc', 'Edge-Ring', 'Loc', 'Near-full', 'None', 'Random', 'Scratch']

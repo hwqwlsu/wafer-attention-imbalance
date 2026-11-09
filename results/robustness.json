@@ -1,0 +1,226 @@
+{
+ "clean": {
+  "base": {
+   "map50": 0.9581,
+   "map": 0.8212,
+   "ap50_per_class": {
+    "Center": 0.981,
+    "Donut": 0.9907,
+    "Edge-Loc": 0.8901,
+    "Edge-Ring": 0.995,
+    "Loc": 0.8811,
+    "Near-full": 0.995,
+    "None": 0.9746,
+    "Random": 0.9841,
+    "Scratch": 0.9312
+   }
+  },
+  "a7": {
+   "map50": 0.949,
+   "map": 0.801,
+   "ap50_per_class": {
+    "Center": 0.9728,
+    "Donut": 0.9818,
+    "Edge-Loc": 0.8645,
+    "Edge-Ring": 0.9948,
+    "Loc": 0.8735,
+    "Near-full": 0.9869,
+    "None": 0.9659,
+    "Random": 0.9814,
+    "Scratch": 0.9197
+   }
+  }
+ },
+ "blur_s1": {
+  "base": {
+   "map50": 0.958,
+   "map": 0.821,
+   "ap50_per_class": {
+    "Center": 0.9813,
+    "Donut": 0.992,
+    "Edge-Loc": 0.8898,
+    "Edge-Ring": 0.995,
+    "Loc": 0.878,
+    "Near-full": 0.995,
+    "None": 0.9749,
+    "Random": 0.9848,
+    "Scratch": 0.9314
+   }
+  },
+  "a7": {
+   "map50": 0.9485,
+   "map": 0.8007,
+   "ap50_per_class": {
+    "Center": 0.9731,
+    "Donut": 0.9825,
+    "Edge-Loc": 0.8635,
+    "Edge-Ring": 0.9949,
+    "Loc": 0.8738,
+    "Near-full": 0.9869,
+    "None": 0.9649,
+    "Random": 0.9818,
+    "Scratch": 0.9147
+   }
+  }
+ },
+ "blur_s2": {
+  "base": {
+   "map50": 0.955,
+   "map": 0.8172,
+   "ap50_per_class": {
+    "Center": 0.9798,
+    "Donut": 0.9921,
+    "Edge-Loc": 0.884,
+    "Edge-Ring": 0.9949,
+    "Loc": 0.881,
+    "Near-full": 0.995,
+    "None": 0.9711,
+    "Random": 0.9853,
+    "Scratch": 0.9113
+   }
+  },
+  "a7": {
+   "map50": 0.94,
+   "map": 0.793,
+   "ap50_per_class": {
+    "Center": 0.963,
+    "Donut": 0.9826,
+    "Edge-Loc": 0.8596,
+    "Edge-Ring": 0.9948,
+    "Loc": 0.8668,
+    "Near-full": 0.9747,
+    "None": 0.9603,
+    "Random": 0.9827,
+    "Scratch": 0.8752
+   }
+  }
+ },
+ "noise_s10": {
+  "base": {
+   "map50": 0.9582,
+   "map": 0.8199,
+   "ap50_per_class": {
+    "Center": 0.9765,
+    "Donut": 0.988,
+    "Edge-Loc": 0.8921,
+    "Edge-Ring": 0.995,
+    "Loc": 0.8867,
+    "Near-full": 0.995,
+    "None": 0.9701,
+    "Random": 0.9851,
+    "Scratch": 0.9357
+   }
+  },
+  "a7": {
+   "map50": 0.9466,
+   "map": 0.7981,
+   "ap50_per_class": {
+    "Center": 0.9745,
+    "Donut": 0.9802,
+    "Edge-Loc": 0.863,
+    "Edge-Ring": 0.9949,
+    "Loc": 0.8595,
+    "Near-full": 0.9912,
+    "None": 0.9599,
+    "Random": 0.9777,
+    "Scratch": 0.9188
+   }
+  }
+ },
+ "noise_s25": {
+  "base": {
+   "map50": 0.9039,
+   "map": 0.755,
+   "ap50_per_class": {
+    "Center": 0.9186,
+    "Donut": 0.9188,
+    "Edge-Loc": 0.8667,
+    "Edge-Ring": 0.9949,
+    "Loc": 0.7833,
+    "Near-full": 0.9912,
+    "None": 0.8083,
+    "Random": 0.9644,
+    "Scratch": 0.8886
+   }
+  },
+  "a7": {
+   "map50": 0.7694,
+   "map": 0.5896,
+   "ap50_per_class": {
+    "Center": 0.8357,
+    "Donut": 0.8358,
+    "Edge-Loc": 0.7725,
+    "Edge-Ring": 0.995,
+    "Loc": 0.6128,
+    "Near-full": 0.9825,
+    "None": 0.3579,
+    "Random": 0.8825,
+    "Scratch": 0.6497
+   }
+  }
+ },
+ "down50": {
+  "base": {
+   "map50": 0.958,
+   "map": 0.8204,
+   "ap50_per_class": {
+    "Center": 0.9811,
+    "Donut": 0.9917,
+    "Edge-Loc": 0.8899,
+    "Edge-Ring": 0.995,
+    "Loc": 0.8784,
+    "Near-full": 0.995,
+    "None": 0.9749,
+    "Random": 0.9846,
+    "Scratch": 0.931
+   }
+  },
+  "a7": {
+   "map50": 0.9487,
+   "map": 0.8005,
+   "ap50_per_class": {
+    "Center": 0.973,
+    "Donut": 0.9825,
+    "Edge-Loc": 0.8631,
+    "Edge-Ring": 0.9949,
+    "Loc": 0.8751,
+    "Near-full": 0.9869,
+    "None": 0.9656,
+    "Random": 0.9822,
+    "Scratch": 0.9153
+   }
+  }
+ },
+ "down25": {
+  "base": {
+   "map50": 0.9549,
+   "map": 0.8169,
+   "ap50_per_class": {
+    "Center": 0.98,
+    "Donut": 0.992,
+    "Edge-Loc": 0.8851,
+    "Edge-Ring": 0.9949,
+    "Loc": 0.8803,
+    "Near-full": 0.995,
+    "None": 0.9705,
+    "Random": 0.9858,
+    "Scratch": 0.9108
+   }
+  },
+  "a7": {
+   "map50": 0.9402,
+   "map": 0.794,
+   "ap50_per_class": {
+    "Center": 0.9635,
+    "Donut": 0.9826,
+    "Edge-Loc": 0.8588,
+    "Edge-Ring": 0.9948,
+    "Loc": 0.8649,
+    "Near-full": 0.9747,
+    "None": 0.9599,
+    "Random": 0.9829,
+    "Scratch": 0.8798
+   }
+  }
+ }
+}

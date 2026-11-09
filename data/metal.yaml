@@ -1,0 +1,9 @@
+# NEU-derived metallic surface defect dataset (YOLO export).
+# Point METAL_ROOT at the exported directory.
+path: ./datasets/metal
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 6
+names: ['crazing', 'inclusion', 'patches', 'pitted_surface', 'rolled_in_scale', 'scratches']

@@ -1,0 +1,10 @@
+# Wafer-map defect detection (WM-811K-derived), original split.
+# Set the environment variable WAFER_ROOT to the dataset directory that
+# contains train/ valid/ test/ with images/ and labels/ sub-folders.
+path: ./datasets/wafer
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 9
+names: ['Center', 'Donut', 'Edge-Loc', 'Edge-Ring', 'Loc', 'Near-full', 'None', 'Random', 'Scratch']

@@ -1,0 +1,10 @@
+# DsPCBSD+ PCB surface defect dataset (Scientific Data 2024,
+# figshare DOI 10.6084/m9.figshare.24970329), YOLO export.
+# Split: train 8208 / valid 1026 / test 1025 (valid deterministically split, seed=0)
+# Point PCB_ROOT at the Data_YOLO directory.
+path: ./datasets/pcb
+train: images/train
+val: images/valid
+test: images/test
+nc: 9
+names: [SH, SP, SC, OP, MB, HB, CS, CFO, BMFO]

@@ -1,0 +1,42 @@
+# YOLOv11n backbone + PRAttn (backbone) + GeoFuse (head) — B1: modules on v11n base
+nc: 9
+scales:
+  n: [0.50, 0.25, 1024]
+
+backbone:
+  - [-1, 1, Conv, [64, 3, 2]] # 0-P1/2
+  - [-1, 1, Conv, [128, 3, 2]] # 1-P2/4
+  - [-1, 2, C3k2, [256, False, 0.25]] # 2
+  - [-1, 1, Conv, [256, 3, 2]] # 3-P3/8
+  - [-1, 2, C3k2, [512, False, 0.25]] # 4
+  - [-1, 1, Conv, [512, 3, 2]] # 5-P4/16
+  - [-1, 2, C3k2, [512, True]] # 6
+  - [-1, 1, PRAttn, []] # 7 P4 polar attention
+  - [-1, 1, Conv, [1024, 3, 2]] # 8-P5/32
+  - [-1, 2, C3k2, [1024, True]] # 9
+  - [-1, 1, SPPF, [1024, 5]] # 10
+  - [-1, 2, C2PSA, [1024]] # 11
+  - [-1, 1, PRAttn, []] # 12 P5 polar attention
+
+head:
+  - [12, 1, nn.Upsample, [None, 2, "nearest"]] # 13
+  - [[-1, 7], 1, Concat, [1]] # 14 cat P4-attn
+  - [-1, 2, C3k2, [512, False]] # 15
+
+  - [-1, 1, nn.Upsample, [None, 2, "nearest"]] # 16
+  - [[-1, 4], 1, Concat, [1]] # 17 cat backbone P3
+  - [-1, 2, C3k2, [256, False]] # 18 (P3/8-small)
+
+  - [-1, 1, Conv, [256, 3, 2]] # 19
+  - [[-1, 15], 1, Concat, [1]] # 20 cat head P4
+  - [-1, 2, C3k2, [512, False]] # 21 (P4/16-medium)
+
+  - [-1, 1, Conv, [512, 3, 2]] # 22
+  - [[-1, 12], 1, Concat, [1]] # 23 cat P5-attn
+  - [-1, 2, C3k2, [1024, True]] # 24 (P5/32-large)
+
+  - [18, 1, GeoFuse, []] # 25 P3 geo embedding
+  - [21, 1, GeoFuse, []] # 26 P4 geo embedding
+  - [24, 1, GeoFuse, []] # 27 P5 geo embedding
+
+  - [[25, 26, 27], 1, Detect, [nc]] # 28 Detect(P3, P4, P5)

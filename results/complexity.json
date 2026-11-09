@@ -1,0 +1,57 @@
+{
+ "YOLOv8n": {
+  "params_m": 3.01,
+  "gflops": 3.47,
+  "size_mb": null
+ },
+ "YOLOv9t": {
+  "params_m": 2.01,
+  "gflops": 3.32,
+  "size_mb": null
+ },
+ "YOLOv10n": {
+  "params_m": 2.71,
+  "gflops": 3.55,
+  "size_mb": null
+ },
+ "YOLOv11n": {
+  "params_m": 2.59,
+  "gflops": 2.72,
+  "size_mb": null
+ },
+ "YOLOv12n": {
+  "params_m": 2.57,
+  "gflops": 2.74,
+  "size_mb": null
+ },
+ "RT-DETR-L": {
+  "params_m": 32.82,
+  "gflops": 47.63,
+  "size_mb": null
+ },
+ "Ours (v11n+aug+CB)": {
+  "params_m": 2.59,
+  "gflops": 2.72,
+  "size_mb": 5.2
+ },
+ "+PRAttn+GeoFuse": {
+  "params_m": 2.76,
+  "gflops": 3.24,
+  "size_mb": 5.5
+ },
+ "+CBAM": {
+  "params_m": 2.76,
+  "gflops": 2.82,
+  "size_mb": 5.5
+ },
+ "+EMA": {
+  "params_m": 2.73,
+  "gflops": 2.82,
+  "size_mb": 5.5
+ },
+ "YOLOv26n": {
+  "params_m": 2.51,
+  "gflops": 2.45,
+  "size_mb": 5.1
+ }
+}
